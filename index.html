@@ -19,14 +19,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a-scene embedded stats vr-mode-ui="enabled: false">
-      <a-asset>
+    <a-scene stats vr-mode-ui="enabled: false" environment="preset: forest">
+      <a-assets>
         <img id="questionBox" src="https://art.pixilart.com/5026373cae2bc11.png" />
-      </a-asset>
-      <a-camera visible="true" fov="60" position="0 2 0"></a-camera>
+        <a-asset-item id="bmo" src="../ar-bodine/public/models/bmo.glb"></a-asset-item>
+      </a-assets>
       <a-light hide-on-enter-ar></a-light>
-<a-sky hide-on-enter-ar color="skyblue"></a-sky>
-        <a-box src="https://art.pixilart.com/5026373cae2bc11.png" position="0 1.5 -5" 
+      <a-sky hide-on-enter-ar color="skyblue"></a-sky>
+    
+        <a-box src="#questionBox" position="0 1.5 -5" 
         rotation="0 45 0" 
         scale="2 2 2" 
         shadow animation="property: object3D.position.y;
@@ -35,6 +36,8 @@
          loop: true; 
          dir: alternate; 
          ease: 0.5"></a-box>
+         <a-entity gltf-model="#bmo" position="0 1.5 -5" scale="3 3 3"></a-entity>
+         <a-gltf-model src="../ar-bodine/public/models/bmo.glb" position="0 2 -5"></a-gltf-model>
       
     </a-scene>
     
