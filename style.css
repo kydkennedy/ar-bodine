@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a-scene {
+/*a-scene {
   width: 50vw;
   height: 70vh;
   left: 0;
@@ -21,7 +21,7 @@ a-scene {
   top: 0;
   bottom: 0;
 }
-
+*/
 a {
   font-weight: 500;
   color: #646cff;
