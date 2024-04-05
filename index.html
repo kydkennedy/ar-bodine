@@ -16,16 +16,15 @@
     <!--star system component for a-frame -->
     <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
     <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a-scene stats vr-mode-ui="enabled: false" environment="preset: forest">
+    <a-scene stats vr-mode-ui="enabled: false">
       <a-assets>
         <img id="questionBox" src="https://art.pixilart.com/5026373cae2bc11.png" />
         <a-asset-item id="bmo" src="../ar-bodine/public/models/bmo.glb"></a-asset-item>
       </a-assets>
-      <a-light hide-on-enter-ar></a-light>
-      <a-sky hide-on-enter-ar color="skyblue"></a-sky>
     
         <a-box src="#questionBox" position="0 1.5 -5" 
         rotation="0 45 0" 
