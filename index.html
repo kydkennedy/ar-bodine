@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Frame VR Demo</title>
+    <script type="module" src="/main.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <!--script to import environment component to set up quick environment that is customizable-->
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <!--script addes animation control from a-frame extras-->
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.3.2/dist/aframe-orbit-controls.min.js"></script>
+    <!--star system component for a-frame -->
+    <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
+    <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a-scene embedded stats vr-mode-ui="enabled: false">
+      <a-asset>
+        <img id="questionBox" src="https://art.pixilart.com/5026373cae2bc11.png" />
+      </a-asset>
+      
+      
+        <a-box src="https://art.pixilart.com/5026373cae2bc11.png" position="6 1.5 -5" 
+        rotation="0 45 0" 
+        scale="2 2 2" 
+        shadow animation="property: object3D.position.y;
+         to:2; 
+         dur: 2000; 
+         loop: true; 
+         dir: alternate; 
+         ease: 0.5"></a-box>
+      
+    </a-scene>
+    
+  </body>
+</html>
